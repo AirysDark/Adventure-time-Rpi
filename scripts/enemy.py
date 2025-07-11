@@ -23,6 +23,7 @@ class Enemy(pygame.sprite.Sprite):
             self.rect.y -= self.speed
         elif self.direction == "down":
             self.rect.y += self.speed
+        elif self.direction == "left":
             self.rect.x -= self.speed
         elif self.direction == "right":
             self.rect.x += self.speed
