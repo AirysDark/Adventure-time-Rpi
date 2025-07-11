@@ -1,0 +1,100 @@
+{
+    "treehouse": [
+        {
+            "from": [
+                4,
+                4
+            ],
+            "to": "grasslands",
+            "spawn": [
+                4,
+                4
+            ]
+        }
+    ],
+    "grasslands": [
+        {
+            "from": [
+                4,
+                4
+            ],
+            "to": "treehouse",
+            "spawn": [
+                4,
+                4
+            ]
+        },
+        {
+            "from": [
+                2,
+                2
+            ],
+            "to": "candy_kingdom",
+            "spawn": [
+                4,
+                4
+            ]
+        },
+        {
+            "from": [
+                7,
+                2
+            ],
+            "to": "ice_kingdom",
+            "spawn": [
+                4,
+                4
+            ]
+        },
+        {
+            "from": [
+                5,
+                7
+            ],
+            "to": "lich_dungeon",
+            "spawn": [
+                4,
+                4
+            ]
+        }
+    ],
+    "candy_kingdom": [
+        {
+            "from": [
+                4,
+                4
+            ],
+            "to": "grasslands",
+            "spawn": [
+                2,
+                2
+            ]
+        }
+    ],
+    "ice_kingdom": [
+        {
+            "from": [
+                4,
+                4
+            ],
+            "to": "grasslands",
+            "spawn": [
+                7,
+                2
+            ]
+        }
+    ],
+    "lich_dungeon": [
+        {
+            "from": [
+                4,
+                4
+            ],
+            "to": "grasslands",
+            "spawn": [
+                5,
+                7
+            ]
+        }
+    ]
+}
