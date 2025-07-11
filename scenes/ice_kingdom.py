@@ -3,9 +3,9 @@ import pytmx
 import os
 from scripts.player import Player
 
-class CandyKingdom:
+class IceKingdom:
     def __init__(self):
-        map_path = os.path.join(os.path.dirname(__file__), "..", "maps", "candy_kingdom.tmx")
+        map_path = os.path.join(os.path.dirname(__file__), "..", "maps", "ice_kingdom.tmx")
         self.map = pytmx.load_pygame(os.path.abspath(map_path))
         self.player = Player([4, 4])
         self.sprites = pygame.sprite.Group(self.player)

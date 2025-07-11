@@ -2,6 +2,8 @@ import pygame
 import sys
 from scenes.scene_loader import load_scene
 
+current_scene = None
+
 class GameEngine:
     def __init__(self):
         pygame.init()
@@ -9,12 +11,15 @@ class GameEngine:
         pygame.display.set_caption("AdventureTimeClone")
         self.clock = pygame.time.Clock()
         self.running = True
-        self.scene = load_scene("title")
+        import core.engine
+        core.engine.current_scene = load_scene("title")
 
     def run(self):
+        import core.engine
         while self.running:
-            self.scene.handle_events()
-            self.scene.update()
-            self.scene.draw(self.screen)
+            scene = core.engine.current_scene
+            scene.handle_events()
+            scene.update()
+            scene.draw(self.screen)
             pygame.display.flip()
             self.clock.tick(60)

@@ -1,11 +1,12 @@
 import pygame
 import pytmx
-import json
+import os
 from scripts.player import Player
 
 class Treehouse:
     def __init__(self):
-        self.map = pytmx.load_pygame("maps/treehouse.tmx")
+        map_path = os.path.join(os.path.dirname(__file__), "..", "maps", "treehouse.tmx")
+        self.map = pytmx.load_pygame(os.path.abspath(map_path))
         self.player = Player([4, 4])
         self.sprites = pygame.sprite.Group(self.player)
 

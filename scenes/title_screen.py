@@ -1,5 +1,6 @@
 import pygame
 import sys
+import core.engine
 
 class TitleScreen:
     def __init__(self):
@@ -13,7 +14,8 @@ class TitleScreen:
                 pygame.quit()
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
-                print("Start game")  # Here, load map scene
+                from scenes.scene_loader import load_scene  # moved here to prevent circular import
+                core.engine.current_scene = load_scene("treehouse")
 
     def update(self):
         pass

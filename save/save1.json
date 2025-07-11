@@ -1,0 +1,11 @@
+{
+    "player": {
+        "map": "treehouse",
+        "pos": [
+            4,
+            4
+        ],
+        "hp": 6
+    },
+    "inventory": []
+}

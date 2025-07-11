@@ -1,0 +1,16 @@
+{
+    "quests": [
+        {
+            "id": "find_enchiridion",
+            "title": "Find the Enchiridion",
+            "description": "Jake mentioned the Enchiridion is hidden near the Treehouse.",
+            "completed": false
+        },
+        {
+            "id": "help_pb",
+            "title": "Help Princess Bubblegum",
+            "description": "Princess Bubblegum needs help fixing a broken candy device.",
+            "completed": false
+        }
+    ]
+}
